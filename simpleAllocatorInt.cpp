@@ -1,6 +1,16 @@
 #include <iostream>
 #include <memory>
 
+/*
+Why Not Just Use new/delete?
+
+Because:
+
+new/delete: Combined memory + construction, Hardcoded, Not container-friendly
+allocator Separate, Customizable, STL-compatible
+*/
+
+
 int main() {
     std::allocator<int> alloc;
 
