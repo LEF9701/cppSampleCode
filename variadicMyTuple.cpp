@@ -1,6 +1,15 @@
 #include<cstddef>
 #include<iostream>
 
+/*
+Design:
+
+MyTuple is defined as a class because it encapsulates private data
+and exposes a controlled interface.
+
+TupleGet is defined as a struct because it serves purely as a
+metaprogramming utility (only a static member function).
+*/
 
 // primary template declaration
 template<typename... Args>
