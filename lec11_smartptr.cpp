@@ -19,11 +19,11 @@ class SmartPtr{
         
         // overloading *
         T& operator*(){ return *ptr; }
-        const T& operator*() const { return *ptr; }
+        const T& operator*() const { return *ptr; } // without the const version, you cant dereference a const SmartPtr
         
         // overloading ->
         T* operator->(){ return ptr; }
-        const T* operator->() const { return ptr; }
+        const T* operator->() const { return ptr; } // without the const version, you cant dereference a const SmartPtr
 
         // copy constructor(deep copy)
         SmartPtr(const SmartPtr& other){
