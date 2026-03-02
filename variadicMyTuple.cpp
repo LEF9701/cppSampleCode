@@ -2,12 +2,15 @@
 #include<iostream>
 
 
+// primary template declaration
 template<typename... Args>
 class MyTuple;
 
+// base case
 template<>
 class MyTuple<> {};
 
+// partial specialisation
 template<typename T, typename... Rest>
 class MyTuple<T, Rest...> {
     T value;
